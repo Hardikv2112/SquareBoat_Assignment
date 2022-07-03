@@ -1,0 +1,414 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: #edf6ff;
+  min-height: 100vh;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 60px;
+  padding: 8px 0px;
+  border-bottom: 2px solid #394a6f;
+}
+
+.login-btn {
+  background-color: #33557f;
+  padding: 8px 12px;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #43afff;
+  border-radius: 8px;
+}
+
+/* .topSection {
+  background-color: #263350;
+} */
+
+.home {
+  background: linear-gradient(
+    to bottom,
+    #303f60 0%,
+    #303f60 60vh,
+    #edf6ff 60vh,
+    #edf6ff 100%
+  );
+}
+
+.login {
+  background: linear-gradient(
+    to bottom,
+    #303f60 0%,
+    #303f60 40vh,
+    #edf6ff 40vh,
+    #edf6ff 100%
+  );
+}
+
+.jobPortal {
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    #303f60 0%,
+    #303f60 25%,
+    #edf6ff 25%,
+    #edf6ff 100%
+  );
+}
+
+.bottomSection {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  padding: 0px 150px;
+}
+
+.textStyle {
+  display: flex;
+  align-items: center;
+  padding: 5px 0px;
+  color: white;
+}
+
+.welcomeContainer {
+  padding: 100px 0px;
+  width: 50%;
+}
+
+.welcomeText {
+  font-size: 60px;
+  color: white;
+}
+
+.women-img {
+  position: absolute;
+  bottom: -120px;
+}
+
+.getStarted {
+  margin: 32px 0px;
+  color: #ddf0ff;
+  font-weight: bold;
+  background-color: #43afff;
+  border: 0px;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.cardContainer {
+  background-color: white;
+  margin: 20px;
+  padding: 40px;
+}
+
+.cardHeading {
+  color: lightblue;
+  padding-bottom: 20px;
+}
+
+.cardContainer {
+  color: black;
+}
+
+.companies {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.company {
+  height: 40px;
+  width: 124px;
+  margin: 15px 5%;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.mainContainer > div {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 12px;
+  transform: translateY(50%);
+  box-shadow: 0px 5px 20px rgb(187, 187, 187);
+}
+
+.inputContainer {
+  position: relative;
+  margin: 8px 0px;
+}
+
+.inputfield {
+  margin: 4px 0px;
+  padding: 6px;
+  width: 25vw;
+  background-color: #e8e8e833;
+  outline: 1px solid #c6c6c6;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.inputfield:focus {
+  outline: 1px solid #43afff;
+}
+
+.errorMessage {
+  position: absolute;
+  bottom: -12px;
+  right: 0px;
+  color: red;
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+.submitContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit {
+  margin: 16px;
+  padding: 8px 32px;
+  background-color: #43afff;
+  border-color: #43afff;
+  border-radius: 5px;
+  border: 0px;
+  color: white;
+}
+
+.jobContainer {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  margin: 12px 1%;
+  margin-left: 0;
+  margin-right: 24px;
+  color: #303f60;
+  background-color: white;
+  padding: 8px;
+}
+
+.jobHeading {
+  margin: 4px;
+  font-size: 17px;
+}
+
+.jobContent {
+  margin: 4px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.noJob-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.noJob-image {
+  height: 100px;
+}
+
+.NoApplicants-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.NoApplicants-image {
+  width: 80px;
+  height: 100px;
+}
+
+.applicationContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.applicationInnerContainer {
+  padding: 12px 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  max-height: 75vh;
+  width: 50vw;
+}
+
+.applicationHeading {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(213, 213, 213);
+  font-size: 19px;
+  padding: 6px 0px;
+}
+
+.cross-icon {
+  margin-left: auto;
+  height: 15px;
+  width: 15px;
+}
+
+.applicantsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #557da526;
+  padding: 8px;
+  border-radius: 4px;
+  max-height: 60vh;
+  overflow-x: hidden;
+}
+
+.applicantContainer {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  margin: 1%;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #303f6080;
+  border-radius: 4px;
+}
+
+.applicantDetails {
+  display: flex;
+  align-items: center;
+}
+
+.applicantIntials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 50%;
+  background-color: #d9efff;
+  font-size: 20px;
+}
+
+.userIntials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 50%;
+  background-color: #d9efff;
+  font-size: 20px;
+}
+
+.applicantAuth {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  color: #303f60;
+  font-size: 15px;
+}
+
+.applicantSkills {
+  margin-top: 16px;
+}
+
+.skillHeading {
+  font-size: 13px;
+}
+
+.skillContent {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.downArrowContainer {
+  display: flex;
+}
+
+.downArrow {
+  width: 9px;
+  height: 6px;
+  margin-left: 5px;
+}
+
+.dropDownContainer {
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  padding: 8px;
+  padding-right: 40px;
+  margin-top: 2px;
+  transform: translateX(-25%);
+  border-radius: 6px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.pagination > img {
+  height: 30px;
+  width: 30px;
+}
+
+.pagination div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  height: 30px;
+  width: 30px;
+}
+
+.house {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4px;
+  height: 10px;
+  width: 10px;
+}
+
+.location {
+  width: 10px;
+  height: 15px;
+  margin-right: 4px;
+}
+
+.jobCardBtn {
+  background-color: #43afff33;
+  border: 0;
+  border-radius: 5px;
+  padding: 12px 24px;
+}
+
+.popUpContainer {
+  position: absolute;
+  z-index: 2;
+  right: 60px;
+  top: 100px;
+  padding: 20px;
+  padding-right: 80px;
+  background-color: white;
+  box-shadow: 0px 3px 6px #557da526;
+  border-radius: 5px;
+}
+
+.popup-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
